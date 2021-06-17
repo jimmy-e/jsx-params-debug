@@ -46,17 +46,17 @@ module.exports = {
   rules: {
     // ----- REACT ----- //
     'react/jsx-max-props-per-line': [2, { maximum: 1 }],
-    'react/jsx-indent-props': [2, 2],
-    'react/jsx-first-prop-new-line': [2, 'multiline'],
-    'react/jsx-wrap-multilines': [
-      'error',
-      {
-        "declaration": "parens-new-line",
-        "assignment": "parens-new-line",
-        "return": "parens-new-line",
-        "arrow": "parens-new-line",
-      },
-    ],
+    // 'react/jsx-indent-props': [2, 2],
+    // 'react/jsx-first-prop-new-line': [2, 'multiline'],
+    // 'react/jsx-wrap-multilines': [
+    //   'error',
+    //   {
+    //     "declaration": "parens-new-line",
+    //     "assignment": "parens-new-line",
+    //     "return": "parens-new-line",
+    //     "arrow": "parens-new-line",
+    //   },
+    // ],
     'react/destructuring-assignment': 0,
     'react/display-name': 0,
     'react/jsx-closing-bracket-location': 1,
