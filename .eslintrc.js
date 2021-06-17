@@ -45,6 +45,18 @@ module.exports = {
   },
   rules: {
     // ----- REACT ----- //
+    'react/jsx-max-props-per-line': [2, { maximum: 1 }],
+    'react/jsx-indent-props': [2, 2],
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
+    'react/jsx-wrap-multilines': [
+      'error',
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+      },
+    ],
     'react/destructuring-assignment': 0,
     'react/display-name': 0,
     'react/jsx-closing-bracket-location': 1,
@@ -52,7 +64,6 @@ module.exports = {
     'react/jsx-indent': 'off',
     'react/jsx-one-expression-per-line': 0, // unnecessary rule
     'react/jsx-props-no-spreading': 0, // Allow prop spreading
-    'react/jsx-wrap-multilines': ['error', { arrow: true, return: true, declaration: true }],
     'react/no-array-index-key': 0, // index keys are fine when used correctly
     'react/no-unused-prop-types': 0, // Fails on SFC which GoogleMapReact is, etc.
     'react/prop-types': 0, // Don't use prop types, use Typescript
